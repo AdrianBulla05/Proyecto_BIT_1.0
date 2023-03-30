@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pagina de contacto</title>
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME ICONOS -->
+    <script
+      src="https://kit.fontawesome.com/a8075636a7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ANIMACION CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <!-- LOGO DE PAGINA -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo_black.png"
+      type="image/x-icon"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body class="body-contact">
+    <!--HEADER-->
+    <header class="content">
+      <h1 class="logo">Contact <span>Us</span></h1>
+
+      <div class="contact-more animated bounceInUp">
+        <div class="contact-form">
+          <h3>Thank You!!</h3>
+          <!-- FORMULARIO -->
+          <form>
+            <p>
+              <label>Nombre</label>
+              <input type="text" name="fullname" />
+            </p>
+            <p>
+              <label>Correo</label>
+              <input type="email" name="email" />
+            </p>
+            <p>
+              <label>Telefono</label>
+              <input type="tel" name="phone" />
+            </p>
+            <p class="block">
+              <label>Motivo Mensaje</label>
+              <textarea name="message" rows="3"></textarea>
+            </p>
+            <p class="block">
+              <button>Enviar</button>
+            </p>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h4>More Info</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> En tu corazón</li>
+            <li><i class="fas fa-phone"></i> +57 310 0000 000</li>
+            <li>
+              <i class="fas fa-envelope-open-text"></i> Mymusic@rockweb.com
+            </li>
+            <li><i class="fa-brands fa-instagram"></i>My_music</li>
+            <li><i class="fa-brands fa-facebook"></i>My_music</li>
+            <li><i class="fa-brands fa-spotify"></i>My_music</li>
+          </ul>
+          <p>
+            Pagina de musica y conciertos en cual hay gran variedad, en las que
+            puedes participar! no te pierdas de esta gran oferta
+          </p>
+          <p>My_music.com</p>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
