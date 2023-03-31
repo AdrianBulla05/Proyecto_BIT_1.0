@@ -4,8 +4,21 @@
 }
 
 .body-contact {
-  
-  height: auto;
+  color: #fff;
+  line-height: 1.6;
+  background-image: linear-gradient(
+      45deg,
+      rgba(130, 107, 190, 0.8),
+      rgba(114, 182, 186, 0.8)
+    ),
+    url(/assets/img/1.png);
+  padding: 0 1.5em;
+  background-position: center center;
+  background-size: cover;
+}
+
+body {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,12 +26,11 @@
       45deg,
       rgba(130, 107, 190, 0.8),
       rgba(114, 182, 186, 0.8)
-    ),url(/assets/img/1.png);
-  padding: 0 1.5em;
-  background-position: center center;
+    ),
+    url(../assets/img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
-  line-height: 1.6;
 }
 /*CLASES DE LOS TEXTOS*/
 .container {
@@ -124,12 +136,6 @@ ul {
   .contact-info p {
     text-align: left;
   }
-}
-=======
-    url(../assets/img/background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* Arreglos de los formularios de ingreso y de registro */
@@ -271,20 +277,20 @@ ul {
 }
 
 .formulario input[type="submit"] {
-    margin: auto;
-    padding: 10px;
-    border-radius: 30px;
-    background-color: rgba(150, 161, 200, 0.465);
-    font-weight: 600;
-    font-size: 18px;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-  }
-  
-  .formulario input[type="submit"]:hover {
-    background-color: rgba(55, 67, 108, 0.465);
-    color: rgb(150, 184, 176);
-  }
+  margin: auto;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: rgba(150, 161, 200, 0.465);
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: rgba(55, 67, 108, 0.465);
+  color: rgb(150, 184, 176);
+}
 
 /* Arreglos de visibilidad de los formularios */
 .sign-in {
@@ -308,141 +314,141 @@ ul {
 /* Estilo general para la pagina news */
 
 .bodyNews {
+  height: auto;
+  background-image: linear-gradient(
+      45deg,
+      rgba(130, 107, 190, 0.8),
+      rgba(114, 182, 186, 0.8)
+    ),
+    url(/assets/img/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Media queries para la pagina */
+
+/* Media query para los dispositivos desde 375px */
+
+@media screen and (min-width: 375px) {
+  /* Estilos para el titulo de la pagina */
+
+  .newsSectionTitle {
+    margin: 5%;
+    color: rgb(238, 238, 238);
+    text-align: center;
+    margin: 4%;
+    font-size: 48px;
+  }
+
+  /* Estilos para el contenedor padre, donde los elementos hijos se organizaran en columnas */
+
+  .newsSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Estilos para los articulos de la pagina, representados en cards*/
+
+  .article {
+    background-color: rgb(214, 214, 214);
+    width: 90%;
     height: auto;
-    background-image: linear-gradient(
-        45deg,
-        rgba(130, 107, 190, 0.8),
-        rgba(114, 182, 186, 0.8)
-      ),
-      url(/assets/img/backgroundPaginas.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin: 5% 5.5%;
+    border-radius: 10%;
   }
-  
-  /* Media queries para la pagina */
-  
-  /* Media query para los dispositivos desde 375px */
-  
-  @media screen and (min-width: 375px) {
-    /* Estilos para el titulo de la pagina */
-  
-    .newsSectionTitle {
-      margin: 5%;
-      color: rgb(238, 238, 238);
-      text-align: center;
-      margin: 4%;
-      font-size: 48px;
-    }
-  
-    /* Estilos para el contenedor padre, donde los elementos hijos se organizaran en columnas */
-  
-    .newsSection {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
-  
-    /* Estilos para los articulos de la pagina, representados en cards*/
-  
-    .article {
-      background-color: rgb(214, 214, 214);
-      width: 90%;
-      height: auto;
-      margin: 5% 5.5%;
-      border-radius: 10%;
-    }
-  
-    /* Estilos para las imagenes que acompañan los articulos*/
-  
-    .photoArticle {
-      width: 100%;
-      object-fit: cover;
-      margin-top: 2%;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 15%;
-    }
-  
-    /* Estilos para el titulo del articulo*/
-  
-    .article h5 {
-      width: 90%;
-      font-size: 20px;
-      height: auto;
-      text-align: center;
-      margin-top: 2.5%;
-      padding-left: 10%;
-      padding-top: 2.5%;
-    }
-  
-    /* Estilos para el texto del articulo*/
-    .article p {
-      margin: 5% auto 7.5% auto;
-      text-align: center;
-      width: 90%;
-    }
-  
-    /* Estilos para el enclace del articulo*/
-    .article a {
-      display: block;
-      margin: 0 auto 0 auto;
-      width: 100px;
-      height: 35px;
-      text-align: center;
-      line-height: 35px;
-      text-decoration: none;
-      margin-bottom: 5%;
-      color: aliceblue;
-      background-color: #4d1c1a;
-      border-radius: 10%;
-    }
+
+  /* Estilos para las imagenes que acompañan los articulos*/
+
+  .photoArticle {
+    width: 100%;
+    object-fit: cover;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15%;
   }
-  
-  /* Media query para los dispositivos desde 375px */
-  
-  @media screen and (min-width: 600px) {
-    /* Estilos para el contenedor padre, donde los elementos hijos se organizaran en filas con su respectivo wrap*/
-    .newsSection {
-      display: flex;
-      align-items: flex-start;
-      flex-flow: row wrap;
-    }
-  
-    /* Estilos para los articulos de la pagina, representados en cards. Con la propiedad definida wrap, caben 2 articulos por fila*/
-    .article {
-      width: 40%;
-      margin: 5% auto;
-    }
+
+  /* Estilos para el titulo del articulo*/
+
+  .article h5 {
+    width: 90%;
+    font-size: 20px;
+    height: auto;
+    text-align: center;
+    margin-top: 2.5%;
+    padding-left: 10%;
+    padding-top: 2.5%;
   }
-  
-  @media screen and (min-width: 800px) {
-    /* Estilos para el contenedor padre, donde los elementos hijos se organizaran en filas con su respectivo wrap*/
-    .newsSection {
-      display: flex;
-      align-items: flex-start;
-      flex-flow: row wrap;
-    }
-  
-    /* Estilos para los articulos de la pagina, representados en cards. Con la propiedad definida wrap, caben 3 articulos por fila*/
-    .article {
-      width: 30%;
-      margin: 5% auto;
-    }
+
+  /* Estilos para el texto del articulo*/
+  .article p {
+    margin: 5% auto 7.5% auto;
+    text-align: center;
+    width: 90%;
   }
-  
-  @media screen and (min-width: 1250px) {
-    /* Estilos para el contenedor padre, donde los elementos hijos se organizaran en filas con su respectivo wrap*/
-    .newsSection {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      flex-flow: row wrap;
-    }
-  
-    .article {
-      /* Estilos para los articulos de la pagina, representados en cards. Con la propiedad definida wrap, caben 4 articulos por fila*/
-      width: 20%;
-      margin: 5% 2.4%;
-    }
+
+  /* Estilos para el enclace del articulo*/
+  .article a {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    margin-bottom: 5%;
+    color: aliceblue;
+    background-color: #4d1c1a;
+    border-radius: 10%;
   }
+}
+
+/* Media query para los dispositivos desde 375px */
+
+@media screen and (min-width: 600px) {
+  /* Estilos para el contenedor padre, donde los elementos hijos se organizaran en filas con su respectivo wrap*/
+  .newsSection {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  /* Estilos para los articulos de la pagina, representados en cards. Con la propiedad definida wrap, caben 2 articulos por fila*/
+  .article {
+    width: 40%;
+    margin: 5% auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  /* Estilos para el contenedor padre, donde los elementos hijos se organizaran en filas con su respectivo wrap*/
+  .newsSection {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  /* Estilos para los articulos de la pagina, representados en cards. Con la propiedad definida wrap, caben 3 articulos por fila*/
+  .article {
+    width: 30%;
+    margin: 5% auto;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  /* Estilos para el contenedor padre, donde los elementos hijos se organizaran en filas con su respectivo wrap*/
+  .newsSection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .article {
+    /* Estilos para los articulos de la pagina, representados en cards. Con la propiedad definida wrap, caben 4 articulos por fila*/
+    width: 20%;
+    margin: 5% 2.4%;
+  }
+}
