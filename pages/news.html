@@ -5,9 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+    rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"/>
     <title>News</title>
   </head>
   <body class="bodyNews">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#collapseNav"
+            aria-controls="collapseNav"
+            aria-expanded="false"
+            aria-label="collapseNav"
+          >
+            <i class="navbar-toggler-icon"></i>
+          </button>
+          <a class="navbar-brand" href="#"><img src="../assets/logo/logo_black.png" width="50px" height="50px"></a>
+          <div class="collapse navbar-collapse" id="collapseNav">
+            <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0 justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./concerts.html">Concerts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Main Navigation-->
+
     <!-- Contenedor main que se usa para contener el contenido principal -->
     <main>
       <!-- Titulo del contenido principal -->
@@ -136,5 +183,47 @@
       </section>
       <!-- Final del contenedor main -->
     </main>
+
+      <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    
+
+    <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <a class="" href="#">
+        <img src="../assets/logo/logo_black.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+      </a>
+      <p class="mt-2 ">Follow us on social media</p>
+      <a href="#" class="btn btn-secondary m-1" role="button"
+        rel="nofollow" target="_blank">
+       
+        <i class="fab fa-instagram fa-3x"></i>
+      </a>
+      <a  href="#" class="btn btn-secondary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-facebook-f fa-3x"></i>
+      </a>
+      <a href="#" class="btn btn-secondary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-spotify fa-3x"></i>
+      </a>
+      
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-dark" href="#">My Music</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+
+  
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+></script>
   </body>
 </html>
