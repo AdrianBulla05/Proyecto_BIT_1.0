@@ -2,6 +2,12 @@
 
 This is a webpage for the people looking information and news about different concerts. 
 
+## Contributors to the project
+* Adrian Felipe Bulla Bernal
+* Valentina Moreno Perez
+* Dayanne Rojas Vivas
+* Edgard Leandro Acevedo Garzon
+
 ## Table of contents
 * [General info](#general-info)
 * [Technologies Used](#technologies-used)
